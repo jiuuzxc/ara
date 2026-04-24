@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Ara</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onclick="handleContinue()">
+
+<button class="mute-btn" onclick="toggleMute(event)">🔊</button>
+
+<audio id="bgm" src="bg.mp3" loop></audio>
+<audio id="yesSound" src="yes.mp3"></audio>
+
+<div class="container" id="container">
+  <div class="image-box">
+    <img id="character" src="juls1.png">
+    <img id="herCharacter" src="ara1.png">
+  </div>
+
+  <div class="dialogue-box">
+    <div class="text">
+      <span id="textContent"></span>
+      <span class="arrow" id="arrow">▶</span>
+    </div>
+    <div class="choices" id="choices"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<div id="endingScreen" class="ending hidden">
+  <div class="ending-box">
+    <p>Ara joined your party ❤️</p>
+  </div>
+</div>
+</body>
+</html>
