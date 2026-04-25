@@ -208,10 +208,10 @@ function moveNo() {
 }
 
 function createHearts() {
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 10; i++) {
     const heart = document.createElement('div');
     heart.className = 'heart';
-    heart.innerText = '<3';
+    heart.innerText = '❤️';
     heart.style.left = Math.random() * window.innerWidth + 'px';
     heart.style.top = '60%';
     document.body.appendChild(heart);
