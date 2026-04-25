@@ -226,11 +226,11 @@ function createHearts() {
 
 function answer(isYes) {
   if (isYes) {
-    document.getElementById('character').src = "juls2.png";
+    document.getElementById('character').src = "/images/juls2.png";
 
     const herImg = document.getElementById('herCharacter');
     herImg.classList.remove('hidden');
-    herImg.src = "ara2.png";
+    herImg.src = "/images/ara2.png";
 
     const yesSound = document.getElementById('yesSound');
     yesSound.volume = 0.2; // adjust here
