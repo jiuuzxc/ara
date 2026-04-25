@@ -28,8 +28,8 @@ function startBeggingLoop() {
     beggingIndex = (beggingIndex + 1) % beggingLines.length;
 
     setChoices(`
-      <button onclick="startBeggingLoop()">Continue 😭</button>
-      <button onclick="answer(true)">Fine... Yes ❤️</button>
+      <button onclick="startBeggingLoop(); event.stopPropagation();">Continue 😭</button>
+      <button onclick="answer(true); event.stopPropagation();">Fine... Yes ❤️</button>
     `);
   });
 }
