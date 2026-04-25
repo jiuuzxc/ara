@@ -9,11 +9,11 @@ let beggingIndex = 0;
 let currentCallback = null;
 
 const beggingLines = [
-  "Plssssss 😭",
+  "Plssssss",
   "Just think about ittt",
   "I'll treat you right fr",
-  "Pleaseeee 🥺",
-  "Trust meeeee plsss 😭",
+  "Pleaseeee",
+  "Trust meeeee plsss",
   "I will do anythinggg"
 ];
 
@@ -28,8 +28,8 @@ function startBeggingLoop() {
     beggingIndex = (beggingIndex + 1) % beggingLines.length;
 
     setChoices(`
-      <button onclick="startBeggingLoop(); event.stopPropagation();">Continue 😭</button>
-      <button onclick="answer(true); event.stopPropagation();">Fine... Yes ❤️</button>
+      <button onclick="startBeggingLoop(); event.stopPropagation();">Nahhhh</button>
+      <button onclick="answer(true); event.stopPropagation();">Fine... Yes</button>
     `);
   });
 }
@@ -172,8 +172,8 @@ function nextStep() {
 
     typeText("Will you be my girlfriend?", () => {
         setChoices(`
-        <button onclick="answer(true); event.stopPropagation();">Yes ❤️</button>
-        <button onclick="answer(false); event.stopPropagation();">No 💔</button>
+        <button onclick="answer(true); event.stopPropagation();">Yes</button>
+        <button onclick="answer(false); event.stopPropagation();">No</button>
         `);
     });
 
@@ -188,7 +188,7 @@ function nextStep() {
 
   } else if (step === 101) {
     currentSpeaker = "you";
-    typeText("Thank you for choosing me... I really appreciate you so much ❤️");
+    typeText("Thank you for choosing me... I really appreciate you so much");
     step++;
 
   } else if (step === 102) {
@@ -208,10 +208,10 @@ function moveNo() {
 }
 
 function createHearts() {
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 20; i++) {
     const heart = document.createElement('div');
     heart.className = 'heart';
-    heart.innerText = '❤️';
+    heart.innerText = '<3';
     heart.style.left = Math.random() * window.innerWidth + 'px';
     heart.style.top = '60%';
     document.body.appendChild(heart);
@@ -238,7 +238,7 @@ function answer(isYes) {
 
     setChoices(''); // ✅ clear buttons immediately
 
-    typeText("Yes... I will ❤️");
+    typeText("Yes... I will");
 
   } else {
     // 😭 BEGGING LOOP
