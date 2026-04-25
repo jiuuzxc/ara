@@ -11,10 +11,15 @@ let currentCallback = null;
 const beggingLines = [
   "Plssssss",
   "Just think about ittt",
-  "I'll treat you right fr",
+  "I'll treat you right frrr",
   "Pleaseeee",
   "Trust meeeee plsss",
-  "I will do anythinggg"
+  "I will do anythinggg",
+  "Are you really sureeee?",
+  "Plssss",
+  "Pleaseee I'm going to be sad and lonelyy",
+  "Ma'am give me a chancee",
+  "Babyy pleaseee"
 ];
 
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
